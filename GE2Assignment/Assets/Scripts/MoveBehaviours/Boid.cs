@@ -23,7 +23,6 @@ public class Boid : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         SteeringBehaviour[] behaviours = GetComponents<SteeringBehaviour>();
 
         foreach (SteeringBehaviour b in behaviours)
@@ -56,21 +55,6 @@ public class Boid : MonoBehaviour
 
         return desired - velocity;
     }
-
-    /*
-    Vector3 Separation()
-    {
-        Vector3 separateVector = new Vector3();
-        var members = level.GetNeighbors(this, ConfigurableJoint.separationRadius);
-        if (members.Count == 0)
-            return separateVector;
-
-        foreach (var member in members)
-        {
-            if(isInFOV(mem))
-        }
-    }
-    */
     
 
     Vector3 Calculate()
