@@ -2991,23 +2991,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 729402434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f388318de72f324da0781ed1f1ad947, type: 3}
+  m_Script: {fileID: 11500000, guid: e73891cf7fba2094184ab63b6844ba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  target: {x: 0, y: 0, z: 0}
-  maxSpeed: 50
-  targetGameObject: {fileID: 0}
-  slowingDistance: 10
-  SeekEnabled: 0
-  ArriveEnabled: 0
-  FollowPathEnabled: 1
-  banking: 0.795
-  path: {fileID: 691032948}
   damping: 0.01
+  banking: 0.1
+  maxSpeed: 30
+  maxForce: 10
+--- !u!114 &729402436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729402434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08b6db94000fe46b8218afdac93f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 691032948}
 --- !u!1 &733825034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,23 +4925,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1028791219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f388318de72f324da0781ed1f1ad947, type: 3}
+  m_Script: {fileID: 11500000, guid: e73891cf7fba2094184ab63b6844ba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  target: {x: 0, y: 0, z: 0}
-  maxSpeed: 50
-  targetGameObject: {fileID: 0}
-  slowingDistance: 10
-  SeekEnabled: 0
-  ArriveEnabled: 0
-  FollowPathEnabled: 1
-  banking: 0.1
-  path: {fileID: 691032948}
   damping: 0.01
+  banking: 0.1
+  maxSpeed: 30
+  maxForce: 10
+--- !u!114 &1028791221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028791219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08b6db94000fe46b8218afdac93f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 691032948}
 --- !u!1001 &1047031228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5097,23 +5117,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1047031230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f388318de72f324da0781ed1f1ad947, type: 3}
+  m_Script: {fileID: 11500000, guid: e73891cf7fba2094184ab63b6844ba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  target: {x: 0, y: 0, z: 0}
-  maxSpeed: 50
-  targetGameObject: {fileID: 0}
-  slowingDistance: 10
-  SeekEnabled: 0
-  ArriveEnabled: 0
-  FollowPathEnabled: 1
-  banking: 0.1
-  path: {fileID: 691032948}
   damping: 0.01
+  banking: 0.1
+  maxSpeed: 30
+  maxForce: 10
+--- !u!114 &1047031232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047031230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08b6db94000fe46b8218afdac93f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 691032948}
 --- !u!1 &1064928942
 GameObject:
   m_ObjectHideFlags: 0
@@ -8093,23 +8123,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1730434391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f388318de72f324da0781ed1f1ad947, type: 3}
+  m_Script: {fileID: 11500000, guid: e73891cf7fba2094184ab63b6844ba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  target: {x: 0, y: 0, z: 0}
-  maxSpeed: 50
-  targetGameObject: {fileID: 0}
-  slowingDistance: 10
-  SeekEnabled: 0
-  ArriveEnabled: 0
-  FollowPathEnabled: 1
-  banking: 0.795
-  path: {fileID: 691032948}
   damping: 0.01
+  banking: 0.1
+  maxSpeed: 30
+  maxForce: 10
+--- !u!114 &1730434393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730434391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08b6db94000fe46b8218afdac93f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 691032948}
 --- !u!43 &1747765667
 Mesh:
   m_ObjectHideFlags: 0
@@ -10662,26 +10702,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745338917948211090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f388318de72f324da0781ed1f1ad947, type: 3}
+  m_Script: {fileID: 11500000, guid: e73891cf7fba2094184ab63b6844ba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  target: {x: 0, y: 0, z: 0}
-  maxSpeed: 50
-  targetGameObject: {fileID: 0}
-  slowingDistance: 10
-  SeekEnabled: 0
-  ArriveEnabled: 0
-  FollowPathEnabled: 1
-  banking: 0.1
-  path: {fileID: 691032948}
   damping: 0.01
+  banking: 0.1
+  maxSpeed: 30
+  maxForce: 10
 --- !u!4 &1745338917948211092 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1745338917425251290, guid: e8a3813a609c9e54ca2dd81fca6eebd0,
     type: 3}
   m_PrefabInstance: {fileID: 1745338917948211089}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1745338917948211093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745338917948211090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a08b6db94000fe46b8218afdac93f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  force: {x: 0, y: 0, z: 0}
+  boid: {fileID: 0}
+  path: {fileID: 691032948}
