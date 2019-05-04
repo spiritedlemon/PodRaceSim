@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
       value: -421.3
@@ -229,6 +233,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -801,6 +809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_02 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
       value: -394.2
@@ -1027,6 +1039,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1898,6 +1914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
       value: -340.10004
@@ -2109,15 +2129,15 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 4
-  sideFeelerDepth: 4
-  frontFeelerUpdatesPerSecond: 4
-  sideFeelerUpdatesPerSecond: 4
-  feelerRadius: 1
+  forwardFeelerDepth: 10
+  sideFeelerDepth: 10
+  frontFeelerUpdatesPerSecond: 10
+  sideFeelerUpdatesPerSecond: 10
+  feelerRadius: 2
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
 --- !u!1001 &562582925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2128,6 +2148,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3555,6 +3579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
       value: -289.6176
@@ -3843,6 +3871,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4399,6 +4431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
       value: -367.9
@@ -4861,6 +4897,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6963,6 +7003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
       value: -378.5
@@ -7049,6 +7093,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7203,6 +7251,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7430,6 +7482,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_03 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7767,6 +7823,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8377,6 +8437,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10112,6 +10176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
       value: -302.4
@@ -11208,6 +11276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_04 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -409.8
@@ -11445,6 +11517,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd9a43100a429264ea0a74b8b15b8500, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12225,6 +12301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -413.101
@@ -12491,6 +12571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_03 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
       value: -387.2
@@ -12566,6 +12650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain_canyon_04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -331.90106
@@ -12640,6 +12728,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f4f4b608ebba404988b7eb3f0abaf88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12719,6 +12811,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_Name
       value: mountain_canyon_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aed201f64af1d404d932a8c7ceb3f57c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14043,7 +14139,6 @@ GameObject:
   - component: {fileID: 1745338918143662187}
   - component: {fileID: 1028791220}
   - component: {fileID: 1028791221}
-  - component: {fileID: 1745338918143662188}
   - component: {fileID: 1745338918143662189}
   m_Layer: 0
   m_Name: Pod4
@@ -14070,29 +14165,6 @@ Transform:
   m_Father: {fileID: 1290488210}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1745338918143662188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745338918143662186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55db2d718c917034393cc9cd772ad9af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dest: {fileID: 0}
-  patrolWaiting: 0
-  totalWaitTime: 0
-  switchProbability: 0
-  patrolPoints:
-  - {fileID: 906453658}
-  - {fileID: 989323837}
-  - {fileID: 404579347}
-  - {fileID: 909414958}
-  - {fileID: 2143351888}
-  - {fileID: 839452350}
 --- !u!114 &1745338918143662189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14109,15 +14181,15 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 30
-  sideFeelerDepth: 15
+  forwardFeelerDepth: 10
+  sideFeelerDepth: 10
   frontFeelerUpdatesPerSecond: 10
-  sideFeelerUpdatesPerSecond: 5
+  sideFeelerUpdatesPerSecond: 10
   feelerRadius: 2
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
 --- !u!23 &1745338918164750272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16395,7 +16467,6 @@ GameObject:
   - component: {fileID: 1745338918194409062}
   - component: {fileID: 1047031231}
   - component: {fileID: 1047031232}
-  - component: {fileID: 1745338918194409064}
   - component: {fileID: 1745338918194409065}
   m_Layer: 0
   m_Name: Pod3
@@ -16404,29 +16475,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1745338918194409064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745338918194409063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55db2d718c917034393cc9cd772ad9af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dest: {fileID: 0}
-  patrolWaiting: 0
-  totalWaitTime: 0
-  switchProbability: 0
-  patrolPoints:
-  - {fileID: 906453658}
-  - {fileID: 989323837}
-  - {fileID: 404579347}
-  - {fileID: 909414958}
-  - {fileID: 2143351888}
-  - {fileID: 839452350}
 --- !u!114 &1745338918194409065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16443,15 +16491,15 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 30
-  sideFeelerDepth: 15
+  forwardFeelerDepth: 10
+  sideFeelerDepth: 10
   frontFeelerUpdatesPerSecond: 10
-  sideFeelerUpdatesPerSecond: 5
+  sideFeelerUpdatesPerSecond: 10
   feelerRadius: 2
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
 --- !u!4 &1745338918271894124
 Transform:
   m_ObjectHideFlags: 0
@@ -20529,7 +20577,6 @@ GameObject:
   - component: {fileID: 5692275262095917134}
   - component: {fileID: 729402435}
   - component: {fileID: 729402436}
-  - component: {fileID: 5692275262095917136}
   - component: {fileID: 5692275262095917137}
   m_Layer: 0
   m_Name: Pod2
@@ -20538,29 +20585,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &5692275262095917136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5692275262095917135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55db2d718c917034393cc9cd772ad9af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dest: {fileID: 0}
-  patrolWaiting: 0
-  totalWaitTime: 0
-  switchProbability: 0
-  patrolPoints:
-  - {fileID: 906453658}
-  - {fileID: 989323837}
-  - {fileID: 404579347}
-  - {fileID: 909414958}
-  - {fileID: 2143351888}
-  - {fileID: 839452350}
 --- !u!114 &5692275262095917137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20577,15 +20601,15 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 30
-  sideFeelerDepth: 15
+  forwardFeelerDepth: 10
+  sideFeelerDepth: 10
   frontFeelerUpdatesPerSecond: 10
-  sideFeelerUpdatesPerSecond: 5
+  sideFeelerUpdatesPerSecond: 10
   feelerRadius: 2
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
 --- !u!1 &5692275262201543394
 GameObject:
   m_ObjectHideFlags: 0
@@ -21856,7 +21880,6 @@ GameObject:
   - component: {fileID: 5692275263365519707}
   - component: {fileID: 1730434392}
   - component: {fileID: 1730434393}
-  - component: {fileID: 5692275263365519708}
   - component: {fileID: 5692275263365519709}
   m_Layer: 0
   m_Name: Pod5
@@ -21883,29 +21906,6 @@ Transform:
   m_Father: {fileID: 1290488210}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5692275263365519708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5692275263365519706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55db2d718c917034393cc9cd772ad9af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dest: {fileID: 0}
-  patrolWaiting: 0
-  totalWaitTime: 0
-  switchProbability: 0
-  patrolPoints:
-  - {fileID: 906453658}
-  - {fileID: 989323837}
-  - {fileID: 404579347}
-  - {fileID: 909414958}
-  - {fileID: 2143351888}
-  - {fileID: 839452350}
 --- !u!114 &5692275263365519709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21922,15 +21922,15 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 30
-  sideFeelerDepth: 15
+  forwardFeelerDepth: 10
+  sideFeelerDepth: 10
   frontFeelerUpdatesPerSecond: 10
-  sideFeelerUpdatesPerSecond: 5
+  sideFeelerUpdatesPerSecond: 10
   feelerRadius: 2
   forceType: 0
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
 --- !u!1 &5692275263455493904
 GameObject:
   m_ObjectHideFlags: 0
