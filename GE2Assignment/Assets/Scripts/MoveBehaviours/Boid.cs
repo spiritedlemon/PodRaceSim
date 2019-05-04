@@ -56,6 +56,11 @@ public class Boid : MonoBehaviour
 
         return desired - velocity;
     }
+
+    Vector3 Separation()
+    {
+
+    }
     
 
     Vector3 Calculate()

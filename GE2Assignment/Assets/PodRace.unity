@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 254300605}
   - component: {fileID: 254300604}
   m_Layer: 0
-  m_Name: wp5
+  m_Name: wp9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,7 +1069,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 4
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &254300604
 SphereCollider:
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 312304173}
   - component: {fileID: 312304172}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: wp3b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1357,7 +1357,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &312304172
 SphereCollider:
@@ -1625,7 +1625,7 @@ GameObject:
   - component: {fileID: 404579345}
   - component: {fileID: 404579344}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: wp3a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1643,7 +1643,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &404579344
 SphereCollider:
@@ -2775,10 +2775,6 @@ Transform:
   m_Children:
   - {fileID: 906453654}
   - {fileID: 989323833}
-  - {fileID: 2019575877}
-  - {fileID: 1353312521}
-  - {fileID: 254300603}
-  - {fileID: 1319493177}
   - {fileID: 404579343}
   - {fileID: 909414954}
   - {fileID: 312304171}
@@ -2788,6 +2784,10 @@ Transform:
   - {fileID: 1765495635}
   - {fileID: 839452346}
   - {fileID: 1320423509}
+  - {fileID: 2019575877}
+  - {fileID: 1353312521}
+  - {fileID: 254300603}
+  - {fileID: 1319493177}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3572,7 +3572,7 @@ GameObject:
   - component: {fileID: 839452348}
   - component: {fileID: 839452347}
   m_Layer: 0
-  m_Name: Sphere (8)
+  m_Name: wp6a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3590,7 +3590,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 13
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &839452347
 SphereCollider:
@@ -3697,7 +3697,7 @@ GameObject:
   - component: {fileID: 855048335}
   - component: {fileID: 855048334}
   m_Layer: 0
-  m_Name: Sphere (3)
+  m_Name: wp4b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3715,7 +3715,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &855048334
 SphereCollider:
@@ -4039,7 +4039,7 @@ GameObject:
   - component: {fileID: 909414956}
   - component: {fileID: 909414955}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: wp4a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4057,7 +4057,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &909414955
 SphereCollider:
@@ -6541,7 +6541,7 @@ GameObject:
   - component: {fileID: 1319493179}
   - component: {fileID: 1319493178}
   m_Layer: 0
-  m_Name: wp6
+  m_Name: wp10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6559,7 +6559,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 5
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1319493178
 SphereCollider:
@@ -6632,7 +6632,7 @@ GameObject:
   - component: {fileID: 1320423511}
   - component: {fileID: 1320423510}
   m_Layer: 0
-  m_Name: Sphere (9)
+  m_Name: wp7a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6650,7 +6650,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 14
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1320423510
 SphereCollider:
@@ -6958,7 +6958,7 @@ GameObject:
   - component: {fileID: 1353312523}
   - component: {fileID: 1353312522}
   m_Layer: 0
-  m_Name: wp4
+  m_Name: wp8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6976,7 +6976,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 3
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1353312522
 SphereCollider:
@@ -7124,7 +7124,7 @@ GameObject:
   - component: {fileID: 1434638770}
   - component: {fileID: 1434638769}
   m_Layer: 0
-  m_Name: Sphere (5)
+  m_Name: wp5b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7142,7 +7142,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1434638769
 SphereCollider:
@@ -8323,7 +8323,7 @@ GameObject:
   - component: {fileID: 1765495637}
   - component: {fileID: 1765495636}
   m_Layer: 0
-  m_Name: Sphere (6)
+  m_Name: wp6b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8341,7 +8341,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &1765495636
 SphereCollider:
@@ -9350,7 +9350,7 @@ GameObject:
   - component: {fileID: 2019575879}
   - component: {fileID: 2019575878}
   m_Layer: 0
-  m_Name: wp3
+  m_Name: wp7b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9368,7 +9368,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 2
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2019575878
 SphereCollider:
@@ -10230,7 +10230,7 @@ GameObject:
   - component: {fileID: 2143351886}
   - component: {fileID: 2143351885}
   m_Layer: 0
-  m_Name: Sphere (4)
+  m_Name: wp5a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10248,7 +10248,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 691032947}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &2143351885
 SphereCollider:
