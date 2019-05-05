@@ -15,6 +15,8 @@ public class FollowPath : SteeringBehaviour {
 
     Vector3 nextWaypoint;
 
+    public GameObject pathGO;
+
     /*
     public void OnDrawGizmos()
     {
@@ -29,6 +31,15 @@ public class FollowPath : SteeringBehaviour {
     public void Start()
     {
         //waypointList = Path.waypoints;
+
+        pathGO = GameObject.Find("CoursePath");
+
+        waypointList.Clear();
+        int count = pathGO.transform.childCount;
+        for (int i = 0; i < count; i++)
+        {
+            waypointList.Add(pathGO.transform.GetChild(i).position);
+        }
     }
 
     public Vector3 NextWaypoint()
@@ -59,10 +70,10 @@ public class FollowPath : SteeringBehaviour {
     public override Vector3 Calculate()
     {
         nextWaypoint = NextWaypoint();
-        Debug.Log(nextWaypoint);
+        //Debug.Log(nextWaypoint);
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
         {
-            path.AdvanceToNext();
+            AdvanceToNext();
         }
 
         return boid.SeekForce(nextWaypoint);

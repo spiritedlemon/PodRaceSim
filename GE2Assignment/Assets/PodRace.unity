@@ -1128,7 +1128,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230536807}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b584dcbed071005408fbd4c36a8a588c, type: 3}
   m_Name: 
@@ -5299,7 +5299,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691032946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b584dcbed071005408fbd4c36a8a588c, type: 3}
   m_Name: 
@@ -5394,7 +5394,11 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
+  waypointList: []
+  next: 0
+  looped: 1
   path: {fileID: 691032948}
+  pathGO: {fileID: 0}
 --- !u!1 &733825034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6840,7 +6844,11 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
+  waypointList: []
+  next: 0
+  looped: 1
   path: {fileID: 691032948}
+  pathGO: {fileID: 0}
 --- !u!1 &1043314390
 GameObject:
   m_ObjectHideFlags: 0
@@ -7147,7 +7155,11 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
+  waypointList: []
+  next: 0
+  looped: 1
   path: {fileID: 691032948}
+  pathGO: {fileID: 0}
 --- !u!1 &1064928942
 GameObject:
   m_ObjectHideFlags: 0
@@ -11600,7 +11612,11 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
+  waypointList: []
+  next: 0
+  looped: 1
   path: {fileID: 691032948}
+  pathGO: {fileID: 0}
 --- !u!1 &1731307336
 GameObject:
   m_ObjectHideFlags: 0
@@ -14771,7 +14787,11 @@ MonoBehaviour:
   weight: 1
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
+  waypointList: []
+  next: 0
+  looped: 1
   path: {fileID: 691032948}
+  pathGO: {fileID: 0}
 --- !u!4 &1745338917948786732
 Transform:
   m_ObjectHideFlags: 0
