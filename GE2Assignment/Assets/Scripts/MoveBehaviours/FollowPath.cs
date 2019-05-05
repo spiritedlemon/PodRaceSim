@@ -11,6 +11,7 @@ public class FollowPath : SteeringBehaviour {
     public bool looped = true;
     public float temp = 0.0f;
 
+    //used for tracking which path the pod is on and where abouts they are on it
     public Boolean altpath = false;
     public int altCount = 0;
 
@@ -25,29 +26,9 @@ public class FollowPath : SteeringBehaviour {
     public GameObject alt6;
     public GameObject alt7;
 
-    /*
-    public Vector3 alt3;
-    public Vector3 alt4;
-    public Vector3 alt5;
-    public Vector3 alt6;
-    public Vector3 alt7;
-    */
-
-    /*
-    public void OnDrawGizmos()
-    {
-        if (isActiveAndEnabled && Application.isPlaying)
-        {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(transform.position, nextWaypoint);
-        }
-    }
-    */
-
     public void Start()
     {
-        //waypointList = Path.waypoints;
-
+        //Get standard past and store in list
         pathGO = GameObject.Find("CoursePath");
 
         waypointList.Clear();
@@ -60,13 +41,13 @@ public class FollowPath : SteeringBehaviour {
 
     public Vector3 NextWaypoint()
     {
-        //Debug.Log(next);
         return waypointList[next];
         
     }
 
     public void SwitchPath()
     {
+        //get random variable and use it to split pods into different paths
         temp = UnityEngine.Random.Range(0.0f, 1.0f);
 
         if(temp >= 0.5f)
@@ -90,7 +71,7 @@ public class FollowPath : SteeringBehaviour {
                     altCount = 2;
                     break;
                 case 3:
-                    //SwitchPath();
+                    //No Switch Available Here
                     altCount = 3;
                     break;
                 case 4:
@@ -110,7 +91,7 @@ public class FollowPath : SteeringBehaviour {
                     altCount = 5;
                     break;
                 case 6:
-                    //SwitchPath();
+                    //No Switch Available Here
                     altCount = 6;
                     break;
                 case 7:
@@ -120,7 +101,7 @@ public class FollowPath : SteeringBehaviour {
                     }
                     break;
                 default:
-                    //for any value not on the alternate path route
+                    //for the rest of the course outside of the rock field
                     break;
 
             }
@@ -146,6 +127,7 @@ public class FollowPath : SteeringBehaviour {
 
         if (altpath == true)
         {
+            //Tracks where the pod is on the inner path
             switch (altCount)
             {
                 case 2:
@@ -164,13 +146,13 @@ public class FollowPath : SteeringBehaviour {
                     nextWaypoint = alt7.transform.position;
                     break;
                 default:
-                    print("How did I get here..." + altCount + "... " + altpath);
+                    print("How did I get here..." + altCount + "... " + altpath); //Hasn't been triggered in testing
                     break;
             }
         }
         else
         {
-            nextWaypoint = NextWaypoint();
+            nextWaypoint = NextWaypoint(); //If on standard path
         }
 
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
