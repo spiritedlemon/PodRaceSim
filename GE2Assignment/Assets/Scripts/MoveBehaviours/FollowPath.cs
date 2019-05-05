@@ -12,7 +12,7 @@ public class FollowPath : SteeringBehaviour {
     public float temp = 0.0f;
 
     public Boolean altpath = false;
-    public int altCount;
+    public int altCount = 0;
 
     public Path path;
     Vector3 nextWaypoint;
@@ -71,7 +71,7 @@ public class FollowPath : SteeringBehaviour {
 
         if(temp >= 0.5f)
         {
-            altpath = true;
+            altpath = !altpath; //toggle boolean
         }
         
     }
@@ -89,7 +89,6 @@ public class FollowPath : SteeringBehaviour {
                     SwitchPath();
                     altCount = 2;
                     break;
-
                 case 3:
                     //SwitchPath();
                     altCount = 3;
@@ -107,17 +106,12 @@ public class FollowPath : SteeringBehaviour {
                     altCount = 6;
                     break;
                 default:
-                    print("How did I get here...");
+                    //for any value not on the alternate path route
                     break;
 
             }
 
-            if (next == 2)
-            {
-                SwitchPath();
-                altCount = 1;
-            }
-
+            
 
         }
         else
@@ -139,7 +133,6 @@ public class FollowPath : SteeringBehaviour {
 
         if (altpath == true)
         {
-            
             switch (altCount)
             {
                 case 2:
@@ -158,7 +151,7 @@ public class FollowPath : SteeringBehaviour {
                     nextWaypoint = alt7.transform.position;
                     break;
                 default:
-                    print("How did I get here...2");
+                    print("How did I get here..." + altCount + "... " + altpath);
                     break;
             }
         }
