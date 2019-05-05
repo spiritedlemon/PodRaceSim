@@ -44,7 +44,14 @@ public class FollowPath : SteeringBehaviour {
 
     public Vector3 NextWaypoint()
     {
+        Debug.Log(next);
         return waypointList[next];
+        
+    }
+
+    public void SwitchPath()
+    {
+
     }
 
     public void AdvanceToNext()
