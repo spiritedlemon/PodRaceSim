@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class FollowPath : SteeringBehaviour {
 
+    public List<Vector3> waypointList = new List<Vector3>();
+
+    public int next = 0;
+    public bool looped = true;
+
+
     public Path path;
 
     Vector3 nextWaypoint;
+
 
     public void OnDrawGizmos()
     {
@@ -20,7 +27,32 @@ public class FollowPath : SteeringBehaviour {
 
     public void Start()
     {
-        
+        //waypointList = Path.waypoints;
+    }
+
+    public Vector3 NextWaypoint()
+    {
+        return waypointList[next];
+    }
+
+    public void AdvanceToNext()
+    {
+        if (looped)
+        {
+            next = (next + 1) % waypointList.Count;
+        }
+        else
+        {
+            if (next != waypointList.Count - 1)
+            {
+                next++;
+            }
+        }
+    }
+
+    public bool IsLast()
+    {
+        return next == waypointList.Count - 1;
     }
 
     public override Vector3 Calculate()
