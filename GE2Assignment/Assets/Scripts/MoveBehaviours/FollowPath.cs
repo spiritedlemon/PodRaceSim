@@ -12,6 +12,7 @@ public class FollowPath : SteeringBehaviour {
     public float temp = 0.0f;
 
     public Boolean altpath = false;
+    public int altCount;
 
     public Path path;
     Vector3 nextWaypoint;
@@ -82,9 +83,39 @@ public class FollowPath : SteeringBehaviour {
             
             next = (next + 1) % waypointList.Count;
 
-            if(next == 2)
+            switch (next)
+            {
+                case 2:
+                    SwitchPath();
+                    altCount = 2;
+                    break;
+
+                case 3:
+                    //SwitchPath();
+                    altCount = 3;
+                    break;
+                case 4:
+                    //SwitchPath();
+                    altCount = 4;
+                    break;
+                case 5:
+                    SwitchPath();
+                    altCount = 5;
+                    break;
+                case 6:
+                    //SwitchPath();
+                    altCount = 6;
+                    break;
+                default:
+                    print("How did I get here...");
+                    break;
+
+            }
+
+            if (next == 2)
             {
                 SwitchPath();
+                altCount = 1;
             }
 
 
@@ -105,23 +136,43 @@ public class FollowPath : SteeringBehaviour {
 
     public override Vector3 Calculate()
     {
-        nextWaypoint = NextWaypoint();
-        
 
+        if (altpath == true)
+        {
+            
+            switch (altCount)
+            {
+                case 2:
+                    nextWaypoint = alt3.transform.position;
+                    break;
+                case 3:
+                    nextWaypoint = alt4.transform.position;
+                    break;
+                case 4:
+                    nextWaypoint = alt5.transform.position;
+                    break;
+                case 5:
+                    nextWaypoint = alt6.transform.position;
+                    break;
+                case 6:
+                    nextWaypoint = alt7.transform.position;
+                    break;
+                default:
+                    print("How did I get here...2");
+                    break;
+            }
+        }
+        else
+        {
+            nextWaypoint = NextWaypoint();
+        }
 
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
         {
             AdvanceToNext();
         }
-
-        if(altpath == true)
-        {
-            return boid.SeekForce(alt3.transform.position);
-        }
-        else
-        {
-            return boid.SeekForce(nextWaypoint);
-        }
+        
+        return boid.SeekForce(nextWaypoint);
         
     }
 }
