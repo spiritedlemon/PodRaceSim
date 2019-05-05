@@ -40,6 +40,7 @@ public class Path : MonoBehaviour {
 		
 	}
 
+    /*
     public Vector3 NextWaypoint()
     {
         return waypoints[next];
@@ -66,7 +67,7 @@ public class Path : MonoBehaviour {
     }
 
 
-
+    */
 
 
 }

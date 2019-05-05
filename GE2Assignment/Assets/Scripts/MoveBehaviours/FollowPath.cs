@@ -15,7 +15,7 @@ public class FollowPath : SteeringBehaviour {
 
     Vector3 nextWaypoint;
 
-
+    /*
     public void OnDrawGizmos()
     {
         if (isActiveAndEnabled && Application.isPlaying)
@@ -24,6 +24,7 @@ public class FollowPath : SteeringBehaviour {
             Gizmos.DrawLine(transform.position, nextWaypoint);
         }
     }
+    */
 
     public void Start()
     {
@@ -57,7 +58,7 @@ public class FollowPath : SteeringBehaviour {
 
     public override Vector3 Calculate()
     {
-        nextWaypoint = path.NextWaypoint();
+        nextWaypoint = NextWaypoint();
         Debug.Log(nextWaypoint);
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
         {
