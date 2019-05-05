@@ -12,10 +12,15 @@ public class FollowPath : SteeringBehaviour {
     public float test = 0.0f;
 
     public Path path;
-
     Vector3 nextWaypoint;
-
     public GameObject pathGO;
+
+    //These store alternate path points for the pods
+    private Vector3 alt3;
+    private Vector3 alt4;
+    private Vector3 alt5;
+    private Vector3 alt6;
+    private Vector3 alt7;
 
     /*
     public void OnDrawGizmos()
@@ -55,9 +60,9 @@ public class FollowPath : SteeringBehaviour {
 
         if(test >= 0.5f)
         {
-            Debug.Log("hey" + test);
+            
         }
-        Debug.Log(test);
+        
     }
 
     public void AdvanceToNext()
