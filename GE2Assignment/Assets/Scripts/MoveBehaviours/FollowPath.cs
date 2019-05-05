@@ -94,16 +94,30 @@ public class FollowPath : SteeringBehaviour {
                     altCount = 3;
                     break;
                 case 4:
-                    //SwitchPath();
+                    if(altpath == false)
+                    {
+                       SwitchPath();
+                    }
+                    
                     altCount = 4;
                     break;
                 case 5:
-                    SwitchPath();
+                    if(altpath == true)
+                    {
+                        SwitchPath();
+                    }
+                    
                     altCount = 5;
                     break;
                 case 6:
                     //SwitchPath();
                     altCount = 6;
+                    break;
+                case 7:
+                    if(altpath == true)
+                    {
+                        altpath = !altpath;
+                    }
                     break;
                 default:
                     //for any value not on the alternate path route
@@ -112,7 +126,6 @@ public class FollowPath : SteeringBehaviour {
             }
 
             
-
         }
         else
         {
