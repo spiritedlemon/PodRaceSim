@@ -31,6 +31,8 @@ public class Path : MonoBehaviour {
         {
             waypoints.Add(transform.GetChild(i).position);
         }
+
+        //pass path to followpath
 	}
 	
 	// Update is called once per frame

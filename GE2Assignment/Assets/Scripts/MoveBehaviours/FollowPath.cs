@@ -26,6 +26,7 @@ public class FollowPath : SteeringBehaviour {
     public override Vector3 Calculate()
     {
         nextWaypoint = path.NextWaypoint();
+        Debug.Log(nextWaypoint);
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
         {
             path.AdvanceToNext();
