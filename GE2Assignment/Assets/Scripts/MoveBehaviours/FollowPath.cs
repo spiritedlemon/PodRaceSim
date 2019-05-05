@@ -9,7 +9,7 @@ public class FollowPath : SteeringBehaviour {
 
     public int next = 0;
     public bool looped = true;
-
+    public float test = 0.0f;
 
     public Path path;
 
@@ -44,14 +44,20 @@ public class FollowPath : SteeringBehaviour {
 
     public Vector3 NextWaypoint()
     {
-        Debug.Log(next);
+        //Debug.Log(next);
         return waypointList[next];
         
     }
 
     public void SwitchPath()
     {
+        test = UnityEngine.Random.Range(0.0f, 1.0f);
 
+        if(test >= 0.5f)
+        {
+            Debug.Log("hey" + test);
+        }
+        Debug.Log(test);
     }
 
     public void AdvanceToNext()
@@ -82,6 +88,8 @@ public class FollowPath : SteeringBehaviour {
         {
             AdvanceToNext();
         }
+
+        SwitchPath();
 
         return boid.SeekForce(nextWaypoint);
     }
