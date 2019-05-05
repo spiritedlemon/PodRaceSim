@@ -9,18 +9,28 @@ public class FollowPath : SteeringBehaviour {
 
     public int next = 0;
     public bool looped = true;
-    public float test = 0.0f;
+    public float temp = 0.0f;
+
+    public Boolean altpath = false;
 
     public Path path;
     Vector3 nextWaypoint;
     public GameObject pathGO;
 
     //These store alternate path points for the pods
-    private Vector3 alt3;
-    private Vector3 alt4;
-    private Vector3 alt5;
-    private Vector3 alt6;
-    private Vector3 alt7;
+    public GameObject alt3;
+    public GameObject alt4;
+    public GameObject alt5;
+    public GameObject alt6;
+    public GameObject alt7;
+
+    /*
+    public Vector3 alt3;
+    public Vector3 alt4;
+    public Vector3 alt5;
+    public Vector3 alt6;
+    public Vector3 alt7;
+    */
 
     /*
     public void OnDrawGizmos()
@@ -56,11 +66,11 @@ public class FollowPath : SteeringBehaviour {
 
     public void SwitchPath()
     {
-        test = UnityEngine.Random.Range(0.0f, 1.0f);
+        temp = UnityEngine.Random.Range(0.0f, 1.0f);
 
-        if(test >= 0.5f)
+        if(temp >= 0.5f)
         {
-            
+            altpath = true;
         }
         
     }
@@ -69,7 +79,15 @@ public class FollowPath : SteeringBehaviour {
     {
         if (looped)
         {
+            
             next = (next + 1) % waypointList.Count;
+
+            if(next == 2)
+            {
+                SwitchPath();
+            }
+
+
         }
         else
         {
@@ -88,14 +106,22 @@ public class FollowPath : SteeringBehaviour {
     public override Vector3 Calculate()
     {
         nextWaypoint = NextWaypoint();
-        //Debug.Log(nextWaypoint);
+        
+
+
         if (Vector3.Distance(transform.position, nextWaypoint) < 6)
         {
             AdvanceToNext();
         }
 
-        SwitchPath();
-
-        return boid.SeekForce(nextWaypoint);
+        if(altpath == true)
+        {
+            return boid.SeekForce(alt3.transform.position);
+        }
+        else
+        {
+            return boid.SeekForce(nextWaypoint);
+        }
+        
     }
 }

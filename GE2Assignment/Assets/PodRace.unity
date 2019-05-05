@@ -3376,16 +3376,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 10
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
-  forceType: 1
+  forceType: 0
   mask:
     serializedVersion: 2
     m_Bits: 512
@@ -6036,6 +6036,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!1 &733825034
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,6 +7812,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!1 &1043314390
 GameObject:
   m_ObjectHideFlags: 0
@@ -8119,6 +8129,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!1 &1064928942
 GameObject:
   m_ObjectHideFlags: 0
@@ -14022,6 +14037,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!1 &1731307336
 GameObject:
   m_ObjectHideFlags: 0
@@ -17836,12 +17856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -17870,6 +17890,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!114 &805024663981934966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18986,7 +19011,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 89ea3d5fe8445244192a0c91d34418d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19255,7 +19280,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: a1c92864a77fc794e829bf06b6f0b858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20379,7 +20404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 89ea3d5fe8445244192a0c91d34418d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20722,7 +20747,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 3230ba7efebca9443aaa96685f85f91b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21830,12 +21855,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -21864,6 +21889,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!114 &1077727736916047054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22135,7 +22165,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 3230ba7efebca9443aaa96685f85f91b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23383,7 +23413,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 3230ba7efebca9443aaa96685f85f91b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23807,6 +23837,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!4 &1745338917948786732
 Transform:
   m_ObjectHideFlags: 0
@@ -24191,12 +24226,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -26501,12 +26536,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -29919,7 +29954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 16c2f33550b2a1545b1c3a5a86fed7fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32134,7 +32169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: fe13c93cdb196ee4fbabcd9d4e8d0225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32347,7 +32382,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: aede15f86e8c7c841877a677ac9bbe6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32666,12 +32701,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -32700,6 +32735,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!114 &2685963903728909978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32737,7 +32777,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: fe13c93cdb196ee4fbabcd9d4e8d0225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34061,7 +34101,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: ac13e0e1b3cabbf468f75b8417469025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35401,7 +35441,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 16c2f33550b2a1545b1c3a5a86fed7fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35480,7 +35520,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fe13c93cdb196ee4fbabcd9d4e8d0225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36040,7 +36080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: aede15f86e8c7c841877a677ac9bbe6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36165,7 +36205,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fe13c93cdb196ee4fbabcd9d4e8d0225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36421,7 +36461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 31f5f73be4c2b704fbffee31d9e9a06d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37557,7 +37597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: ac13e0e1b3cabbf468f75b8417469025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39810,7 +39850,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: ac13e0e1b3cabbf468f75b8417469025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40297,7 +40337,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: fe13c93cdb196ee4fbabcd9d4e8d0225, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41407,7 +41447,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 31f5f73be4c2b704fbffee31d9e9a06d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41535,12 +41575,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -41569,6 +41609,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!114 &5581983825457501626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41889,7 +41934,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 89ea3d5fe8445244192a0c91d34418d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42144,12 +42189,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 10
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -43465,12 +43510,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -44935,7 +44980,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 16c2f33550b2a1545b1c3a5a86fed7fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46526,7 +46571,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 16c2f33550b2a1545b1c3a5a86fed7fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -46603,12 +46648,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce704161c3975be4eb12b3b3127399a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 3
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   scale: 4
-  forwardFeelerDepth: 50
-  sideFeelerDepth: 20
+  forwardFeelerDepth: 40
+  sideFeelerDepth: 15
   frontFeelerUpdatesPerSecond: 50
   sideFeelerUpdatesPerSecond: 50
   feelerRadius: 5
@@ -46637,6 +46682,11 @@ MonoBehaviour:
   test: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  alt3: {fileID: 404579342}
+  alt4: {fileID: 909414953}
+  alt5: {fileID: 2143351883}
+  alt6: {fileID: 839452345}
+  alt7: {fileID: 1320423508}
 --- !u!114 &5703133270821826710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46898,7 +46948,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: a1c92864a77fc794e829bf06b6f0b858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
