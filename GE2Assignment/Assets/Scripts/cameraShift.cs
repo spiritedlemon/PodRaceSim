@@ -8,6 +8,9 @@ public class cameraShift : MonoBehaviour
     public GameObject thisCam; //Camera script is attatched to
     private Vector3 startpos; //Location camera will return to 
 
+    public bool moveRight = false; //
+    public int camSpeed = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +24,21 @@ public class cameraShift : MonoBehaviour
         
         if(thisCam.GetComponent<Camera>().enabled == true)
         {
-
-            Debug.Log("Hey there");
+            if(!moveRight)
+            {
+                thisCam.transform.Translate(Vector3.right * Time.deltaTime * camSpeed, Space.World);
+            }
+            
         }
-        
-        
+
+        //When diabled set back to start
+        if (thisCam.GetComponent<Camera>().enabled == false)
+        {
+            thisCam.transform.position = startpos;
+
+        }
+
+
 
     }
 }
