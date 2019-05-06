@@ -67,7 +67,13 @@ public class EventManager : MonoBehaviour
                 //De-Activate Camera 3
                 six.GetComponent<Camera>().enabled = false;
                 break;
-                
+            case 0:
+                //Activate camera 4
+                one.GetComponent<Camera>().enabled = true;
+                //De-Activate Camera 3
+                seven.GetComponent<Camera>().enabled = false;
+                break;
+
         }
 
 
