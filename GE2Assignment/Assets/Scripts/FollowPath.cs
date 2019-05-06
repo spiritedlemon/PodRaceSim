@@ -14,8 +14,7 @@ public class FollowPath : SteeringBehaviour {
     //used for tracking which path the pod is on and where abouts they are on it
     public Boolean altpath = false;
     public int altCount = 0;
-
-    public Path path;
+    
     Vector3 nextWaypoint;
     public GameObject pathGO;
     public bool doubleTake = false; //Stop pod from switching twice in a row
