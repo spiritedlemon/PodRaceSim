@@ -6,6 +6,8 @@ public class EventManager : MonoBehaviour
 {
     public int position;
     public GameObject pod;
+    public AudioClip podSound;
+    public bool played = false;
 
     //Cameras
     public GameObject one;
@@ -30,6 +32,13 @@ public class EventManager : MonoBehaviour
         switch(position)
         {
             default:
+                break;
+            case 1:
+                if(!played) //if not already done, play sound
+                {
+                    AudioSource.PlayClipAtPoint(podSound, pod.transform.position);
+                    played = true;
+                }
                 break;
             case 2:
                 //Activate camera 2
@@ -72,6 +81,7 @@ public class EventManager : MonoBehaviour
                 one.GetComponent<Camera>().enabled = true;
                 //De-Activate Camera 3
                 seven.GetComponent<Camera>().enabled = false;
+                played = false; //reset for audio
                 break;
 
         }
