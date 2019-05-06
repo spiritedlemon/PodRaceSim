@@ -28,7 +28,11 @@ public class cameraShift : MonoBehaviour
             {
                 thisCam.transform.Translate(Vector3.right * Time.deltaTime * camSpeed, Space.World);
             }
-            
+            if (moveRight)
+            {
+                thisCam.transform.Translate(Vector3.left * Time.deltaTime * camSpeed, Space.World);
+            }
+
         }
 
         //When diabled set back to start
