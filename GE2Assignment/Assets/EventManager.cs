@@ -32,9 +32,18 @@ public class EventManager : MonoBehaviour
             default:
                 break;
             case 2:
-                //
+                //Activate camera 2
+                two.GetComponent<Camera>().enabled = true;
+                //De-Activate Camera 1
+                one.GetComponent<Camera>().enabled = false;
                 break;
-                
+            case 5:
+                //Activate camera 2
+                three.GetComponent<Camera>().enabled = true;
+                //De-Activate Camera 1
+                two.GetComponent<Camera>().enabled = false;
+                break;
+
 
         }
 

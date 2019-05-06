@@ -18,6 +18,7 @@ public class FollowPath : SteeringBehaviour {
     public Path path;
     Vector3 nextWaypoint;
     public GameObject pathGO;
+    public bool doubleTake = false; //Stop pod from switching twice in a row
 
     //These store alternate path points for the pods
     public GameObject alt3;
@@ -78,16 +79,18 @@ public class FollowPath : SteeringBehaviour {
                     if(altpath == false)
                     {
                        SwitchPath();
+                        doubleTake = true;
                     }
                     
                     altCount = 4;
                     break;
                 case 5:
-                    if(altpath == true)
+                    if(altpath == true && doubleTake == false)
                     {
                         SwitchPath();
                     }
-                    
+
+                    doubleTake = false;
                     altCount = 5;
                     break;
                 case 6:
