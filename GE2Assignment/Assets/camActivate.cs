@@ -21,7 +21,7 @@ public class camActivate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(first) //only first pod each lap - var reset elsewhere (event manager)
+        if(first) //only first pod each lap - var reset in event manager script (Case 0)
         {
             StartCoroutine(Activate());
             first = false;
@@ -32,7 +32,7 @@ public class camActivate : MonoBehaviour
     IEnumerator Activate()
     {
         cam.GetComponent<Camera>().enabled = true;
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(5.0f);
         cam.GetComponent<Camera>().enabled = false;
 
     }

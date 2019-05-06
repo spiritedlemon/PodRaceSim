@@ -2016,10 +2016,10 @@ Transform:
   - {fileID: 1209632273}
   - {fileID: 1064928943}
   - {fileID: 941238924}
-  - {fileID: 1264098470}
   - {fileID: 602784921}
   - {fileID: 1515561566}
   - {fileID: 772807551}
+  - {fileID: 1264098470}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3820,6 +3820,7 @@ GameObject:
   - component: {fileID: 1745338917948211091}
   - component: {fileID: 1745338917948211093}
   - component: {fileID: 557562957}
+  - component: {fileID: 557562956}
   m_Layer: 0
   m_Name: Pod1
   m_TagString: Untagged
@@ -3845,6 +3846,19 @@ Transform:
   m_Father: {fileID: 1290488210}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &557562956
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557562954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &557562957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5172,7 +5186,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 271749879}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 30, y: 213.42, z: 0}
 --- !u!114 &602784922
 MonoBehaviour:
@@ -5200,7 +5214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisCam: {fileID: 602784920}
-  moveRight: 0
+  moveRight: 1
   camSpeed: 70
 --- !u!81 &602784924
 AudioListener:
@@ -6445,10 +6459,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
 --- !u!114 &729402436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6606,7 +6620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 271749879}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!81 &772807552
 AudioListener:
@@ -8298,10 +8312,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
 --- !u!114 &1028791221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8618,10 +8632,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
 --- !u!114 &1047031232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10909,6 +10923,7 @@ GameObject:
   - component: {fileID: 1264098468}
   - component: {fileID: 1264098467}
   - component: {fileID: 1264098471}
+  - component: {fileID: 1264098472}
   m_Layer: 0
   m_Name: EventTrigger
   m_TagString: trigger
@@ -10982,11 +10997,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264098466}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.70007, y: -389.89996, z: -22.400024}
-  m_LocalScale: {x: 1, y: 10, z: 30}
+  m_LocalPosition: {x: -53.2, y: -369.8, z: 32.8}
+  m_LocalScale: {x: 1, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 271749879}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1264098471
 MonoBehaviour:
@@ -11000,8 +11015,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa6d7d90867cf04ab210da28ca80c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 602784920}
   first: 0
+--- !u!54 &1264098472
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264098466}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!43 &1277167229
 Mesh:
   m_ObjectHideFlags: 0
@@ -13878,7 +13909,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 271749879}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 12.38, y: -129.197, z: 0}
 --- !u!81 &1515561567
 AudioListener:
@@ -14838,10 +14869,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
 --- !u!114 &1730434393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20116,6 +20147,7 @@ GameObject:
   - component: {fileID: 805024663981934966}
   - component: {fileID: 805024663981934965}
   - component: {fileID: 805024663981934964}
+  - component: {fileID: 805024663981934967}
   m_Layer: 0
   m_Name: Pod7
   m_TagString: Untagged
@@ -20211,10 +20243,23 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
+--- !u!135 &805024663981934967
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805024663981934962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &805024664021235921
 GameObject:
   m_ObjectHideFlags: 0
@@ -24138,6 +24183,7 @@ GameObject:
   - component: {fileID: 1077727736916047053}
   - component: {fileID: 1077727736916047052}
   - component: {fileID: 1077727736916047055}
+  - component: {fileID: 1077727736916047056}
   m_Layer: 0
   m_Name: Pod9
   m_TagString: Untagged
@@ -24215,10 +24261,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 90
+  maxForce: 150
 --- !u!82 &1077727736916047055
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24315,6 +24361,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &1077727736916047056
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077727736916047051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1077727737065733718
 Transform:
   m_ObjectHideFlags: 0
@@ -26213,10 +26272,10 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
-  banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  damping: 2
+  banking: 1
+  maxSpeed: 90
+  maxForce: 150
 --- !u!114 &1745338917948211093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26593,6 +26652,7 @@ GameObject:
   - component: {fileID: 1028791220}
   - component: {fileID: 1028791221}
   - component: {fileID: 1745338918143662189}
+  - component: {fileID: 1745338918143662188}
   m_Layer: 0
   m_Name: Pod4
   m_TagString: Untagged
@@ -26618,6 +26678,19 @@ Transform:
   m_Father: {fileID: 1290488210}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1745338918143662188
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745338918143662186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1745338918143662189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28921,6 +28994,7 @@ GameObject:
   - component: {fileID: 1047031231}
   - component: {fileID: 1047031232}
   - component: {fileID: 1745338918194409065}
+  - component: {fileID: 1745338918194409064}
   m_Layer: 9
   m_Name: Pod3
   m_TagString: Untagged
@@ -28928,6 +29002,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &1745338918194409064
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745338918194409063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1745338918194409065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35086,6 +35173,7 @@ GameObject:
   - component: {fileID: 2685963903728909978}
   - component: {fileID: 2685963903728909977}
   - component: {fileID: 2685963903728909976}
+  - component: {fileID: 2685963903728909979}
   m_Layer: 0
   m_Name: Pod10
   m_TagString: Untagged
@@ -35163,10 +35251,23 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
+--- !u!135 &2685963903728909979
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685963903728909975}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2685963903761108784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43942,6 +44043,7 @@ GameObject:
   - component: {fileID: 5581983825457501626}
   - component: {fileID: 5581983825457501625}
   - component: {fileID: 5581983825457501624}
+  - component: {fileID: 5581983825457501627}
   m_Layer: 0
   m_Name: Pod8
   m_TagString: Untagged
@@ -44040,10 +44142,23 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
+--- !u!135 &5581983825457501627
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581983825457501622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5581983825580816828
 GameObject:
   m_ObjectHideFlags: 0
@@ -44580,6 +44695,7 @@ GameObject:
   - component: {fileID: 729402435}
   - component: {fileID: 729402436}
   - component: {fileID: 5692275262095917137}
+  - component: {fileID: 5692275262095917136}
   m_Layer: 0
   m_Name: Pod2
   m_TagString: Untagged
@@ -44587,6 +44703,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!135 &5692275262095917136
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692275262095917135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5692275262095917137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45883,6 +46012,7 @@ GameObject:
   - component: {fileID: 1730434392}
   - component: {fileID: 1730434393}
   - component: {fileID: 5692275263365519709}
+  - component: {fileID: 5692275263365519708}
   m_Layer: 0
   m_Name: Pod5
   m_TagString: Untagged
@@ -45908,6 +46038,19 @@ Transform:
   m_Father: {fileID: 1290488210}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &5692275263365519708
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692275263365519706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5692275263365519709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49021,6 +49164,7 @@ GameObject:
   - component: {fileID: 5703133270821826710}
   - component: {fileID: 5703133270821826709}
   - component: {fileID: 5703133270821826708}
+  - component: {fileID: 5703133270821826711}
   m_Layer: 0
   m_Name: Pod6
   m_TagString: Untagged
@@ -49116,10 +49260,23 @@ MonoBehaviour:
   acceleration: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   mass: 1
-  damping: 2.5
+  damping: 2
   banking: 0.775
-  maxSpeed: 50
-  maxForce: 50
+  maxSpeed: 80
+  maxForce: 150
+--- !u!135 &5703133270821826711
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5703133270821826706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5703133271000291032
 GameObject:
   m_ObjectHideFlags: 0
