@@ -6424,6 +6424,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -6455,13 +6456,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733825034}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 320.77124, y: -331.35672, z: 57.062622}
+  m_LocalRotation: {x: 0.23738669, y: 0.54966056, z: -0.16654967, w: 0.7834425}
+  m_LocalPosition: {x: 384, y: -297.1, z: -25.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 271749879}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 33.714, y: 70.107, z: 0}
 --- !u!81 &733825036
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6477,7 +6478,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733825034}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -6497,7 +6498,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6519,7 +6520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733825034}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9683db4d5cd39274984798176319bf17, type: 3}
   m_Name: 
@@ -6615,7 +6616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772807550}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9683db4d5cd39274984798176319bf17, type: 3}
   m_Name: 
@@ -8244,6 +8245,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -8563,6 +8565,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -10394,7 +10397,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209632272}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -13588,7 +13591,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515561565}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9683db4d5cd39274984798176319bf17, type: 3}
   m_Name: 
@@ -14356,6 +14359,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -19839,6 +19843,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -23841,6 +23846,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -25887,6 +25893,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -34787,6 +34794,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -43663,6 +43671,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
@@ -48738,6 +48747,7 @@ MonoBehaviour:
   altCount: 0
   path: {fileID: 691032948}
   pathGO: {fileID: 0}
+  doubleTake: 0
   alt3: {fileID: 404579342}
   alt4: {fileID: 909414953}
   alt5: {fileID: 2143351883}
