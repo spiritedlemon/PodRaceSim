@@ -1,15 +1,16 @@
 # Pod Racing Simulator
 Games Engines 2 Assignment - Simon O'Leary - C15413218
 
-In this project I will attempt to make a simulation of the pod racing scene from Star Wars: The Phantom Menace.
-In this scene Anakin Skywalker narrowly wins this pod race after a poor start. This scene will be created using 
-movement behaviours such as path following and obstacle avoidance, allowing the racers to navigate the obstacles 
-on the track. 
+This is a pod racing simulation created in Unity using a number of the movement behaviours outlined by Craig Reynolds in his paper: 
+"Steering Behaviors For Autonomous Characters". There are 10 pods in the scene of varying size and design. 
+They avoid obstacles using the obstacle avoidance behaviour & get their pathing from the 'FollowPath' script on each pod. 
 
-An estimated 7 cameras will be used in this scene and will track the progress of the pods, turning to follow their
-progress where required. The assets for the pods will be custom made while for the terrain I will try find
-assets elsewhere.
+Cameras turn to watch the pods as they go by. Camera changes are triggered when a pod reaches a certain point of the race. 
+Two cameras move along side the pods on the long stretches and one close-up camera is used at the chokepoint in the middle of the lap.
+The assets for the map are from the asset store and the pods were custom made using basic Unity shapes.
 
-![image1.jpeg](https://github.com/spiritedlemon/PodRaceSim/tree/master/StoryboardPictures/image1.jpeg)
+A video of the project can be found here: https://youtu.be/y9X7weXQvfI
 
-![image2.jpeg](https://github.com/spiritedlemon/PodRaceSim/tree/master/StoryboardPictures/image2.jpeg)
+Version of Unity: 2018.3.6f1(64bit)
+
+Craig Reynold's paper can be found here: https://www.red3d.com/cwr/steer/ 
